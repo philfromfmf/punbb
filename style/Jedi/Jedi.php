@@ -1,0 +1,7 @@
+<?php
+
+$forum_loader->add_css($base_url.'/style/Jedi/Jedi.css', array('type' => 'url', 'group' => FORUM_CSS_GROUP_SYSTEM, 'media' => 'screen'));
+$forum_loader->add_css($base_url.'/style/Jedi/Jedi_cs.css', array('type' => 'url', 'group' => FORUM_CSS_GROUP_SYSTEM, 'media' => 'screen'));
+$forum_loader->add_css($base_url.'/style/Jedi/Jedi_ie7.css', array('type' => 'url', 'group' => FORUM_CSS_GROUP_SYSTEM, 'media' => 'screen'));
+
+?>
