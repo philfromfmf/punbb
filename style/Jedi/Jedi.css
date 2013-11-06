@@ -220,10 +220,9 @@ B - GLOBAL STYLES
 -------------------------------------------------------------*/
 
 .brd {
-	padding: 1em 2em;
-	margin: 0 auto;
+	padding: 0;
+	margin: 1em 2em;
 	min-width: 700px;
-	width: 90%;
 }
 
 #brd-redirect,
