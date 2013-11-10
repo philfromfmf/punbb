@@ -20,14 +20,13 @@
 
     <hooks>
 
-    <hook id="aop_registration_validation"><![CDATA[
-      if (!isset($form['regs_invites']) || $form['regs_invites'] != '1') $form['regs_invites'] = '0';
-    ]]></hook>
+        <hook id="aop_registration_validation"><![CDATA[
+            require $ext_info['path'].'/admin_validation.php';
+        ]]></hook>
 
-
-    <hook id="aop_registration_new_regs_fieldset_end"><![CDATA[
-        require $ext_info['path'].'/admin.php';
-    ]]></hook>
+        <hook id="aop_registration_new_regs_fieldset_end"><![CDATA[
+            require $ext_info['path'].'/admin_view.php';
+        ]]></hook>
 
     </hooks>
 
