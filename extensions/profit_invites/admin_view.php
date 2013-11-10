@@ -28,7 +28,7 @@ $forum_page['group_count'] = $forum_page['item_count'] = 0;
     <div class="sf-set set<?php echo ++$forum_page['item_count'] ?>">
         <div class="sf-box text">
             <label for="fld<?php echo ++$forum_page['fld_count'] ?>">
-                <span><?php echo $lang_profit_invites['Invites count per user'] ?></span>
+                <span><?php echo $lang_profit_invites['Invites count per user']; ?></span>
             </label><br />
             <span class="fld-input"><input type="number" id="fld<?php echo $forum_page['fld_count'] ?>" name="form[invites_number]" size="6" maxlength="5" value="<?php echo $forum_config['o_invites_number'] ?>" /></span>
         </div>

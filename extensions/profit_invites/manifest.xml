@@ -28,6 +28,18 @@
             require $ext_info['path'].'/admin_view.php';
         ]]></hook>
 
+        <hook id="pf_change_details_modify_main_menu"><![CDATA[
+            require $ext_info['path'].'/profile_navigation.php';
+        ]]></hook>
+
+        <hook id="pf_change_details_new_section"><![CDATA[
+            require $ext_info['path'].'/profile_view.php';
+        ]]></hook>
+
+        <hook id="pf_change_details_new_section_validation"><![CDATA[
+            require $ext_info['path'].'/profile_validation.php';
+        ]]></hook>
+
     </hooks>
 
 </extension>
