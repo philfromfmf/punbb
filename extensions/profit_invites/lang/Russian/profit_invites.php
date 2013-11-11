@@ -21,4 +21,7 @@ $lang_profit_invites = array(
     'Email to invite' => 'E-mail пользователя, которого Вы хотите пригласить на форум',
     'Send invite' => 'Отправить инвайт',
 
+    'Invite code' => 'Код инвайта',
+    'Invite code help' => 'Введите код из письма с приглашением на форум',
+
 );

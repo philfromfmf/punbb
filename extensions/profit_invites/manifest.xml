@@ -60,6 +60,10 @@
             require $ext_info['path'].'/rg_output_start.php';
         ]]></hook>
 
+        <hook id="rg_register_pre_username"><![CDATA[
+            require $ext_info['path'].'/rg_form.php';
+        ]]></hook>
+
     </hooks>
 
 </extension>

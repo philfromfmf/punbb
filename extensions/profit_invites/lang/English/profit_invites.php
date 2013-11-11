@@ -21,4 +21,7 @@ $lang_profit_invites = array(
     'Email to invite' => 'User e-mail you want to invite',
     'Send invite' => 'Send invite',
 
+    'Invite code' => 'Invite code',
+    'Invite code help' => 'Enter invite code from invitation e-mail',
+
 );
