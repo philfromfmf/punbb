@@ -1,11 +1,12 @@
 <?php
 
-if (file_exists($ext_info['path'] . '/lang/' . $forum_user['language'] . '/profit_invites.php'))
-    include $ext_info['path'] . '/lang/' . $forum_user['language'] . '/profit_invites.php';
-else
-    include $ext_info['path'] . '/lang/English/pun_repository.php';
+if ( $forum_config['p_regs_invites'] && $section == 'invites' ) {
 
-if ($section == 'invites') {
+    // Language file includes
+    if (file_exists($ext_info['path'] . '/lang/' . $forum_user['language'] . '/profit_invites.php'))
+        include $ext_info['path'] . '/lang/' . $forum_user['language'] . '/profit_invites.php';
+    else
+        include $ext_info['path'] . '/lang/English/pun_repository.php';
 
     // Setup breadcrumbs
     $forum_page['crumbs'] = array(
@@ -29,7 +30,7 @@ if ($section == 'invites') {
 ?>
 
     <div class="main-subhead">
-        <h2 class="hn"><span><?php printf(($forum_page['own_profile']) ? $lang_profile['Invites welcome'] : $lang_profile['Invites welcome user'], forum_htmlencode($user['username'])) ?></span></h2>
+        <h2 class="hn"><span><?php printf(($forum_page['own_profile']) ? $lang_profit_invites['Invites welcome'] : $lang_profit_invites['Invites welcome user'], forum_htmlencode($user['username'])) ?></span></h2>
     </div>
 
     <div class="main-content main-frm">
@@ -50,8 +51,10 @@ if ($section == 'invites') {
     </div>
 
 <?php
+
     $tpl_temp = forum_trim(ob_get_contents());
     $tpl_main = str_replace('<!-- forum_main -->', $tpl_temp, $tpl_main);
     ob_end_clean();
     require FORUM_ROOT.'footer.php';
+
 }
