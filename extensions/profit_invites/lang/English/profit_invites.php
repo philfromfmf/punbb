@@ -16,6 +16,7 @@ $lang_profit_invites = array(
     'Invites welcome user' => 'Invites of user %s',
     'Invites limit exceeded' => 'Invites limit exceeded',
     'Banned e-mail' => 'E-mail is banned',
+    'Dupe invite' => 'This invite is already sent',
     'Sent invites' => 'Sent invites',
     'Email to invite' => 'User e-mail you want to invite',
     'Send invite' => 'Send invite',

@@ -33,4 +33,14 @@ if ($section == 'invites') {
     if ( 0 < $result['dupe'] )
         $errors[] = $lang_profile['Dupe e-mail'];
 
+    $query = array(
+        'SELECT'	=> 'COUNT(i.id) AS dupe',
+        'FROM'		=> 'invites AS i',
+        'WHERE'		=> 'i.email=\''.$forum_db->escape($form['invite_email']).'\''
+    );
+    $result = $forum_db->query_build($query) or error(__FILE__, __LINE__);
+    $result = $forum_db->fetch_assoc($result);
+    if ( 0 < $result['dupe'] )
+        $errors[] = $lang_profit_invites['Dupe invite'];
+
 }

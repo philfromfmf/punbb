@@ -16,6 +16,7 @@ $lang_profit_invites = array(
     'Invites welcome user' => 'Инвайты пользователя %s',
     'Invites limit exceeded' => 'Вы уже использовали все инвайты',
     'Banned e-mail' => 'Введенный адрес электронной почты забанен',
+    'Dupe invite' => 'Такой инвайт уже выслан',
     'Sent invites' => 'Отправленные инвайты',
     'Email to invite' => 'E-mail пользователя, которого Вы хотите пригласить на форум',
     'Send invite' => 'Отправить инвайт',
