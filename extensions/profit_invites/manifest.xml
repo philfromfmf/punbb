@@ -48,6 +48,10 @@
             require $ext_info['path'].'/profile_pre_db_validation.php';
         ]]></hook>
 
+        <hook id="pf_new_action"><![CDATA[
+            require $ext_info['path'].'/profile_db_update.php';
+        ]]></hook>
+
     </hooks>
 
 </extension>
