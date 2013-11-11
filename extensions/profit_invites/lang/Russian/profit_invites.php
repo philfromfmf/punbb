@@ -23,5 +23,7 @@ $lang_profit_invites = array(
 
     'Invite code' => 'Код инвайта',
     'Invite code help' => 'Введите код из письма с приглашением на форум',
+    'Invite doesn\'t exists' => 'Вы не приглашены на этот форум',
+    'Invalid invite code' => 'Неверный код инвайта',
 
 );

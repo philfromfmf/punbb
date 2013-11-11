@@ -56,6 +56,10 @@
             require $ext_info['path'].'/rg_rules.php';
         ]]></hook>
 
+        <hook id="rg_register_end_validation"><![CDATA[
+            require $ext_info['path'].'/rg_validation.php';
+        ]]></hook>
+
         <hook id="rg_register_output_start"><![CDATA[
             require $ext_info['path'].'/rg_output_start.php';
         ]]></hook>

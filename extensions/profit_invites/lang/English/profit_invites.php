@@ -23,5 +23,7 @@ $lang_profit_invites = array(
 
     'Invite code' => 'Invite code',
     'Invite code help' => 'Enter invite code from invitation e-mail',
+    'Invite doesn\'t exists' => 'Invite doesn\'t exists',
+    'Invalid invite code' => 'Invalid invite code',
 
 );
