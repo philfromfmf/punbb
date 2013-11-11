@@ -52,6 +52,14 @@
             require $ext_info['path'].'/profile_db_update.php';
         ]]></hook>
 
+        <hook id="rg_rules_group_end"><![CDATA[
+            require $ext_info['path'].'/rg_rules.php';
+        ]]></hook>
+
+        <hook id="rg_register_output_start"><![CDATA[
+            require $ext_info['path'].'/rg_output_start.php';
+        ]]></hook>
+
     </hooks>
 
 </extension>
