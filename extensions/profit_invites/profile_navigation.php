@@ -14,7 +14,7 @@ if ( $forum_config['p_regs_invites'] ) {
 
     $forum_page['main_menu']['invites'] = '<li class="'.(($section == 'invites') ? ' active' : '').'"><a href="'.forum_link('profile.php?section=invites&amp;id=$1', $id).'"><span>'.$lang_profit_invites['Section invites'].'</span></a></li>';
 
-    if ( isset($forum_page['main_menu']['admin']) ) {
+    if ( isset($adminMenu) ) {
         $forum_page['main_menu']['admin'] = $adminMenu;
     }
 
