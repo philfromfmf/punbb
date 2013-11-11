@@ -14,6 +14,10 @@ $schema = array(
             'datatype' => 'VARCHAR(200)',
             'allow_null' => false,
         ),
+        'code' => array(
+            'datatype' => 'CHAR(6)',
+            'allow_null' => false,
+        ),
     ),
     'PRIMARY KEY' => array('id'),
     'UNIQUE KEYS' => array(
