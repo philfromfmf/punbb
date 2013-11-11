@@ -24,6 +24,24 @@ if ( $forum_config['p_regs_invites'] && $section == 'invites' ) {
         'csrf_token'	=> '<input type="hidden" name="csrf_token" value="'.generate_form_token($forum_page['form_action']).'" />'
     );
 
+    $forum_page['invites'] = array();
+    $query = array(
+        'SELECT'	=> 'i.*, u.id AS user_id, u.username AS user_name',
+        'FROM'		=> 'invites AS i',
+        'JOINS'     => array(
+            array(
+                'LEFT JOIN' => 'users AS u',
+                'ON'        => 'u.email=i.email',
+            ),
+        ),
+        'WHERE'		=> 'i.inviter=' . $id . '',
+    );
+    $result = $forum_db->query_build($query) or error(__FILE__, __LINE__);
+    while ( $invite = $forum_db->fetch_assoc($result)) {
+        $forum_page['invites'][] = $invite;
+    }
+
+
     define('FORUM_PAGE', 'profile-invites');
     require FORUM_ROOT.'header.php';
     ob_start();
@@ -50,16 +68,22 @@ if ( $forum_config['p_regs_invites'] && $section == 'invites' ) {
 
         <form id="afocus" class="frm-form frm-ctrl-submit" method="post" accept-charset="utf-8" action="<?php echo $forum_page['form_action'] ?>">
 
+            <?php if (!empty($forum_page['invites'])) : ?>
             <div class="ct-set data-set set2">
                 <div class="ct-box data-box">
                     <h4 class="ct-legend hn"><span><?php echo $lang_profit_invites['Sent invites']; ?></span></h4>
                     <ul class="data-box">
-                        <li><span>1</span></li>
-                        <li><span>2</span></li>
-                        <li><span>3</span></li>
+                        <?php foreach ( $forum_page['invites'] as $invite ) :?>
+                            <?php if ( $invite['user_id'] ) : ?>
+                                <li><span><a href="<?php echo forum_link($forum_url['user'], $invite['user_id']); ?>"><?php echo forum_htmlencode($invite['user_name']); ?></a> (<?php echo $invite['email']; ?>)</span></li>
+                            <?php else: ?>
+                                <li><span><?php echo $invite['email']; ?></span></li>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </div>
+            <?php endif; ?>
 
             <?php if ( $user['invites_count'] < $forum_config['o_invites_number'] ): ?>
             <div class="hidden">
