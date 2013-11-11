@@ -47,7 +47,38 @@ if ( $forum_config['p_regs_invites'] && $section == 'invites' ) {
                 </ul>
             </div>
         <?php endif; ?>
-        TEST
+
+        <form id="afocus" class="frm-form frm-ctrl-submit" method="post" accept-charset="utf-8" action="<?php echo $forum_page['form_action'] ?>">
+
+            <div class="ct-set data-set set2">
+                <div class="ct-box data-box">
+                    <h4 class="ct-legend hn"><span><?php echo $lang_profit_invites['Sent invites']; ?></span></h4>
+                    <ul class="data-box">
+                        <li><span>1</span></li>
+                        <li><span>2</span></li>
+                        <li><span>3</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hidden">
+                <?php echo implode("\n\t\t\t\t", $forum_page['hidden_fields'])."\n" ?>
+            </div>
+            <fieldset class="frm-group group<?php echo ++$forum_page['group_count'] ?>">
+                <div class="sf-set set<?php echo ++$forum_page['item_count'] ?>">
+                    <div class="sf-box text">
+                        <label for="fld<?php echo ++$forum_page['fld_count'] ?>">
+                            <span><?php echo $lang_profit_invites['Email to invite']; ?></span>
+                        </label><br />
+                        <span class="fld-input"><input type="text" id="fld<?php echo $forum_page['fld_count'] ?>" name="form[invite_email]" size="35" maxlength="80" value="" /></span>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="frm-buttons">
+                <span class="submit primary"><input type="submit" name="update" value="<?php echo $lang_profit_invites['Send invite'] ?>" /></span>
+            </div>
+        </form>
+
     </div>
 
 <?php
