@@ -61,6 +61,7 @@ if ( $forum_config['p_regs_invites'] && $section == 'invites' ) {
                 </div>
             </div>
 
+            <?php if ( $user['invites_count'] < $forum_config['o_invites_number'] ): ?>
             <div class="hidden">
                 <?php echo implode("\n\t\t\t\t", $forum_page['hidden_fields'])."\n" ?>
             </div>
@@ -77,6 +78,7 @@ if ( $forum_config['p_regs_invites'] && $section == 'invites' ) {
             <div class="frm-buttons">
                 <span class="submit primary"><input type="submit" name="update" value="<?php echo $lang_profit_invites['Send invite'] ?>" /></span>
             </div>
+            <?php endif; ?>
         </form>
 
     </div>
