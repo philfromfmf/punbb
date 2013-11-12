@@ -18,6 +18,7 @@ if (isset($_POST['form_sent']) && $section == 'invites' && empty($errors)) {
 
     $mail_subject = $lang_profit_invites['Mail subject'];
     $mail_message = $lang_profit_invites['Mail body'];
+    $mail_subject = str_replace('<board_title>', $forum_config['o_board_title'], $mail_subject);
     $mail_message = str_replace('<board_title>', $forum_config['o_board_title'], $mail_message);
     $mail_message = str_replace('<base_url>', $base_url.'/', $mail_message);
     $mail_message = str_replace('<activation_url_with_code>', $base_url.'/register.php?email=' . $form['invite_email'] . '&code=' . $code, $mail_message);
