@@ -85,7 +85,7 @@ if ( $forum_config['p_regs_invites'] && $section == 'invites' ) {
             </div>
             <?php endif; ?>
 
-            <?php if ( $user['invites_count'] < $forum_config['o_invites_number'] ): ?>
+            <?php if ( ($forum_user['g_id'] == FORUM_ADMIN) || ($user['invites_count'] < $forum_config['o_invites_number']) ): ?>
             <div class="hidden">
                 <?php echo implode("\n\t\t\t\t", $forum_page['hidden_fields'])."\n" ?>
             </div>

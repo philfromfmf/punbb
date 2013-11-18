@@ -29,5 +29,7 @@ if ( !$forum_db->table_exists('invites') ) {
     $forum_db->create_table('invites', $schema);
 }
 
-forum_config_add('p_regs_invites', '0');
-forum_config_add('o_invites_number', '5');
+if ( !defined('EXT_CUR_VERSION') ) {
+    forum_config_add('p_regs_invites', '0');
+    forum_config_add('o_invites_number', '5');
+}

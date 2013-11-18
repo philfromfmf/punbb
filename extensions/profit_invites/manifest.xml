@@ -4,10 +4,10 @@
 
     <id>profit_invites</id>
     <title>By-Invites Registration</title>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <description>This extension is allow registration by invites via e-mail</description>
     <author>ProfIT</author>
-    <minversion>1.3</minversion>
+    <minversion>1.4</minversion>
     <maxtestedon>1.4.3</maxtestedon>
 
     <install><![CDATA[

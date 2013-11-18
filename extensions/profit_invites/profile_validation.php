@@ -9,7 +9,7 @@ if ($section == 'invites') {
 
     $form = extract_elements(array('invite_email'));
 
-    if ( $user['invites_count']+1 > $forum_config['o_invites_number'] )
+    if ( !($forum_user['g_id'] == FORUM_ADMIN) && ($user['invites_count']+1 > $forum_config['o_invites_number']) )
         $errors[] = $lang_profit_invites['Invites limit exceeded'];
 
     if (!defined('FORUM_EMAIL_FUNCTIONS_LOADED'))
