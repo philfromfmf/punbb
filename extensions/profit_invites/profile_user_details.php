@@ -18,7 +18,7 @@ if ( $forum_config['p_regs_invites'] ) {
     $inviter = $forum_db->fetch_assoc($result);
 
     if ( $inviter ) {
-        $forum_page['user_info']['registered'] .= 'по приглашению пользователя <a href="' . forum_link($forum_url['user'], $inviter['id']) . '">' . forum_htmlencode($inviter['username']) . '</a>';
+        $forum_page['user_info']['registered'] .= $lang_profit_invites['is invited by'] . ' <a href="' . forum_link($forum_url['user'], $inviter['id']) . '">' . forum_htmlencode($inviter['username']) . '</a>';
     }
 
     $forum_page['user_info']['registered'] .= '</span></li>';

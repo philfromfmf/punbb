@@ -21,6 +21,8 @@ $lang_profit_invites = array(
     'Email to invite' => 'E-mail пользователя, которого Вы хотите пригласить на форум',
     'Send invite' => 'Отправить инвайт',
 
+    'is invited by' => 'по приглашению пользователя',
+
     'Mail subject' => 'Вы приглашены на <board_title>!',
     'Mail body' => <<<BODY
 Вы приглашены на форум <base_url>.

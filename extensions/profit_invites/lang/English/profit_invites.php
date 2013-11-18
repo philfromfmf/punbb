@@ -21,6 +21,8 @@ $lang_profit_invites = array(
     'Email to invite' => 'User e-mail you want to invite',
     'Send invite' => 'Send invite',
 
+    'is invited by' => 'is invited by',
+
     'Mail subject' => 'You are welcome to <board_title>!',
     'Mail body' => <<<BODY
 You are invited to in the forums at <base_url>.
