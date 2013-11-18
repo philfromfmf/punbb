@@ -4,7 +4,7 @@
 
     <id>profit_invites</id>
     <title>By-Invites Registration</title>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description>This extension is allow registration by invites via e-mail</description>
     <author>ProfIT</author>
     <minversion>1.4</minversion>
@@ -26,6 +26,10 @@
 
         <hook id="aop_registration_new_regs_fieldset_end"><![CDATA[
             require $ext_info['path'].'/admin_view.php';
+        ]]></hook>
+
+        <hook id="pf_change_details_about_pre_header_load"><![CDATA[
+            require $ext_info['path'].'/profile_user_details.php';
         ]]></hook>
 
         <hook id="pf_qr_get_user_info"><![CDATA[
