@@ -5,7 +5,7 @@ if (file_exists($ext_info['path'] . '/lang/' . $forum_user['language'] . '/profi
 else
     include $ext_info['path'] . '/lang/English/pun_repository.php';
 
-if ($section == 'invites') {
+if ($section == 'invites' && $id == $forum_user['id']) {
 
     $form = extract_elements(array('invite_email'));
 

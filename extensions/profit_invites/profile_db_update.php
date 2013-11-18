@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['form_sent']) && $section == 'invites' && empty($errors)) {
+if (isset($_POST['form_sent']) && $section == 'invites' && $id == $forum_user['id'] && empty($errors)) {
 
     if (file_exists($ext_info['path'] . '/lang/' . $forum_user['language'] . '/profit_invites.php'))
         include $ext_info['path'] . '/lang/' . $forum_user['language'] . '/profit_invites.php';
