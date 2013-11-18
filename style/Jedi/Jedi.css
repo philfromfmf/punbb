@@ -83,7 +83,7 @@ html {
 }
 
 body {
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .brd-page {
@@ -246,7 +246,7 @@ B - GLOBAL STYLES
 }
 
 .gen-content {
-	padding: 0 1.5em;
+	padding: 0 0.75em;
 }
 
 #brd-about,
@@ -343,7 +343,7 @@ th {
 .main-foot {
 	border-style: solid;
 	border-width: 1px;
-	padding: 0 1.417em;
+	padding: 0 0.75em;
 }
 
 .main-head .hn,
@@ -636,6 +636,9 @@ C - COMMON CONTENT TYPES (RE-USABLE FORMATS)
 #brd-navlinks a {
 	padding: 0.43em .7em;
 }
+#brd-navlinks li:first-child a {
+	padding-left: 0;
+}
 
 #brd-navlinks li.first-item,
 .main-menu li.first-item,
@@ -671,9 +674,9 @@ D - COMMON INTERFACE ELEMENTS
 -------------------------------------------------------------*/
 
 #brd-head {
-	padding-bottom: 0.75em;
-	padding-top: 1em;
-	border-radius: .4em .4em 0 0;
+	padding-bottom: 0.35em;
+	padding-top: 0.25em;
+	border-radius: .5em .5em 0 0;
 }
 
 #brd-title {
@@ -959,7 +962,7 @@ E - INDEX, FORUMS, SEARCH RESULTS, MODERATE FORUMS
 }
 
 .item-summary .subject-title {
-	padding-left: 1.417em;
+	padding-left: 0.75em;
 }
 
 .item-summary .info-topics,

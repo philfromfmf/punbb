@@ -70,8 +70,7 @@ a:focus {
 }
 
 .main-pagepost {
-	background: #fff;
-	border-color: #DDE4EB;
+	border-color: #E1DED9;
 }
 
 #brd-crumbs-top .crumblast a,
@@ -84,7 +83,7 @@ a:focus {
 .main-item li,
 .main-item div,
 td {
-	border-color: #DDE4EB;
+	border-color: #E1DED9;
 }
 
 .main-content .main-item .item-nav {
@@ -111,7 +110,7 @@ h4.post-title,
 .posthead h3,
 .userstatus span,
 .sig-line {
-	border-color: #DDE4EB;
+	border-color: #E1DED9;
 }
 
 .post-num,
@@ -120,7 +119,7 @@ h4.post-title,
 }
 
 .post {
-	border-color: #DDE4EB;
+	border-color: #E1DED9;
 	border-top-color: #fff;
 	border-bottom-color: #ccc;
 	background: #EDF1F5;
@@ -128,8 +127,8 @@ h4.post-title,
 
 #topic-review .firstpost,
 .singlepost {
-	border-top-color: #DDE4EB;
-	border-bottom-color: #DDE4EB;
+	border-top-color: #E1DED9;
+	border-bottom-color: #E1DED9;
 }
 
 .posthead,
@@ -330,7 +329,6 @@ label,
 ----------------------------------------------------------------*/
 
 #brd-navlinks {
-	border-color: rgb(212, 208, 200);
 }
 
 #brd-navlinks a:link,
@@ -394,6 +392,10 @@ label,
 #brd-admod #alert a {
 	color: yellow;
 	font-weight: bold;
+}
+
+#brd-visit {
+    border-top: none;
 }
 
 /* Logo and Headings
@@ -701,7 +703,7 @@ button[disabled]:focus {
 #brd-debug th {
 	background: #fff;
 	border: none;
-	border-bottom: 2px solid #DDE4EB;
+	border-bottom: 2px solid #E1DED9;
 	color: #111;
 }
 
