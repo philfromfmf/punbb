@@ -13,20 +13,20 @@ a:focus {
 a:link,
 a:visited,
 .js_link {
-	color: #00579C;
+	color: #448DDF;
 	text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:focus {
-	color: #CD0021;
-	text-decoration: underline;
+	color: blue;
+	text-decoration: none;
 }
 
 .js_link {
 	cursor: pointer;
-	border-color: #00579C;
+	border-color: #448DDF;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	user-select: none;
