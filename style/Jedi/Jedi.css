@@ -83,11 +83,11 @@ html {
 }
 
 body {
-	font-size: 15px;
+	font-size: 12px;
 }
 
 .brd-page {
-	font: 75%/1.5em Verdana, Helvetica, Arial, sans-serif;
+	font: 100%/1.5em Verdana, Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -824,7 +824,6 @@ ul#brd-admod {
 }
 
 #brd-crumbs-top .crumblast {
-	font-size: 1.15em;
 }
 
 
