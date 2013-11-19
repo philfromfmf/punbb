@@ -523,7 +523,7 @@ $forum_page['group_count'] = $forum_page['item_count'] = 0;
 
 				($hook = get_hook('profit_pm_pre_main_navlinks_add')) ? eval($hook) : null;
 
-				$links['profile'] .= "\n\t\t".'<li id="nav_profit_pm"'.('profit_pm' == substr(FORUM_PAGE, 0, 6) ? ' class="isactive"' : '').'><a href="'.forum_link($forum_url['profit_pm']).'"><span>'.$lang_profit_pm['Private messages'].'</span></a></li>';
+				$links['profile'] .= "\n\t\t".'<li id="nav_profit_pm"'.('profit_pm' == substr(FORUM_PAGE, 0, 6) ? ' class="isactive"' : '').'><a href="'.forum_link($forum_url['profit_pm']).'"><span>'.profit_pm_unread_messages().'</span></a></li>';
 
 				($hook = get_hook('profit_pm_after_main_navlinks_add')) ? eval($hook) : null;
 			}
