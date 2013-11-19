@@ -184,7 +184,7 @@ function profit_pm_unread_messages()
 		profit_pm_write_cache($forum_user['id'], $new_messages, $profit_pm_my_inbox_full);
 	}
 
-	$return = $new_messages ? '<strong>'.$lang_profit_pm['New link'].'</strong>' : (!$profit_pm_my_inbox_full ? $lang_profit_pm['New link'] : $lang_profit_pm['New link full']);
+	$return = $new_messages ? '<strong>'.$lang_profit_pm['New link'].' ['.$new_messages.']</strong>' : (!$profit_pm_my_inbox_full ? $lang_profit_pm['New link'] : $lang_profit_pm['New link full']);
 
 	($hook = get_hook('profit_pm_fn_unread_messages_end')) ? eval($hook) : null;
 
