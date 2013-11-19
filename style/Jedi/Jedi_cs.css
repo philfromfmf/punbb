@@ -361,6 +361,11 @@ label,
 	color: #448DDF;
 	text-decoration: none;
 }
+#brd-navlinks a strong,
+.main-menu a strong ,
+.admin-menu a strong {
+    color: #448DDF;
+}
 
 #brd-navlinks a:hover,
 #brd-navlinks a:active,

@@ -14,7 +14,7 @@
 <extension engine="1.0">
 	<id>profit_pm</id>
 	<title>Private Messaging</title>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Allows users to send and receive private messages.</description>
 	<author>PunBB Development Team and ProfIT</author>
 
@@ -517,6 +517,9 @@ $forum_page['group_count'] = $forum_page['item_count'] = 0;
 					else
 						include $ext_info['path'].'/lang/English/'.$ext_info['id'].'.php';
 				}
+
+                if(!defined('profit_pm_FUNCTIONS_LOADED'))
+					require $ext_info['path'].'/functions.php';
 
 				if ('profit_pm' == substr(FORUM_PAGE, 0, 6))
 					$links['profile'] = str_replace(' class="isactive"', '', $links['profile']);
