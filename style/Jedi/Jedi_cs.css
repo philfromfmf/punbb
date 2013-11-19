@@ -470,11 +470,16 @@ label,
 }
 
 th {
-	background: #F4F4F4;
+	background: #E9E6E3;
+    color: #665955;
+    border-left: 1px solid rgb(212, 208, 200);
+    border-collapse: collapse;
+}
+th:first-child {
+    border-left: none;
 }
 
 .main-frm .ct-group td {
-	background: #FBFBFB;
 }
 
 #extensions-used {
