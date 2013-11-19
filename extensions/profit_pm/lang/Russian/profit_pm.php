@@ -1,7 +1,7 @@
 <?php
 
-// Language definitions used in pun_pm
-$lang_pun_pm = array(
+// Language definitions used in profit_pm
+$lang_profit_pm = array(
 	'Private messages'		=> 'Личные сообщения',
 	'New message'			=> 'Написать сообщение',
 	'Edit message'			=> 'Редактировать сообщение',

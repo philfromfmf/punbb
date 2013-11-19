@@ -1,26 +1,26 @@
-/* Styles for pun_pm extension */
+/* Styles for profit_pm extension */
 
 /* Message list styles */
 
-.pun_pm_list {
+.profit_pm_list {
 	width: 100%;
 	border-collapse: collapse;
 }
 
-.pun_pm_list td,
-.pun_pm_list th {
+.profit_pm_list td,
+.profit_pm_list th {
 	height: auto;
 	width: auto;
 	margin: 0;
 	padding: 0.3em 1em;
 }
 
-.pun_pm_list .pm_new td {
+.profit_pm_list .pm_new td {
 	font-weight: bold;
 }
 
-.pun_pm_list .td1,
-.pun_pm_list .td2 {
+.profit_pm_list .td1,
+.profit_pm_list .td2 {
 	width: 2.3em;
 	text-align: center;
 	padding-left: 0;
@@ -28,53 +28,53 @@
 	vertical-align: middle;
 }
 
-.pun_pm_list .td5,
-.pun_pm_list .td3 {
+.profit_pm_list .td5,
+.profit_pm_list .td3 {
 	width: 14em;
 }
 
-.pun_pm_list .td1 {
+.profit_pm_list .td1 {
 	border-left-style: none;
 	border-left-width: 0;
 }
 
-.pun_pm_list td.td3 {
+.profit_pm_list td.td3 {
 	border-style: solid none none solid;
 }
 
-.pun_pm_list td.td4 {
+.profit_pm_list td.td4 {
 	border-style: solid none none none;
 }
 
-.pun_pm_list td.td5 {
+.profit_pm_list td.td5 {
 	border-style: solid none none none;
 }
 
 
-.pun_pm_list .td4 span {
+.profit_pm_list .td4 span {
 	overflow: hidden;
 	display: block;
 	height: 1.3em;
 }
 
-.pun_pm_list .td4 a.mess {
+.profit_pm_list .td4 a.mess {
 	text-decoration: none;
 	color: #999;
 }
 
-.pun_pm_list .selected td {
+.profit_pm_list .selected td {
 	background: #FFFFCC;
 }
 
 
 /* Message styles */
-.pun_pm_msg table td {
+.profit_pm_msg table td {
 	width: auto;
 	border-width: 0;
 	padding: 0.3em 0;
 }
 
-.pun_pm_msg .td1 {
+.profit_pm_msg .td1 {
 	font-weight: bold;
 	width: 17.7em;
 	padding-right: 1em;
@@ -82,14 +82,14 @@
 	vertical-align: top;
 }
 
-.pun_pm_msg .post-entry  {
+.profit_pm_msg .post-entry  {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 1.5em;
 }
 
-.pun_pm_msg,
-.pun_pm_msg .post-entry .entry-content {
+.profit_pm_msg,
+.profit_pm_msg .post-entry .entry-content {
 	margin: 1em 0.7em;
 	width: auto !important;
 }

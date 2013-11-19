@@ -1,9 +1,9 @@
 /**
- * Provides keybord shortcuts for send form in pun_pm
+ * Provides keybord shortcuts for send form in profit_pm
  *
  * @copyright (C) 2008-2009 PunBB
  * @license http://www.gnu.org/licenses/gpl.html GPL version 2 or higher
- * @package pun_pm
+ * @package profit_pm
  */
 
 (function(global){
@@ -35,8 +35,8 @@
 				e.preventDefault();
 			e.returnValue = false;
 
-			document.forms.pun_pm_sendform.send_action.value = 'draft';
-			document.forms.pun_pm_sendform.submit();
+			document.forms.profit_pm_sendform.send_action.value = 'draft';
+			document.forms.profit_pm_sendform.submit();
 
 			return false;
 		}
@@ -46,24 +46,24 @@
 				e.preventDefault();
 			e.returnValue = false;
 
-			document.forms.pun_pm_sendform.send_action.value = 'send';
-			document.forms.pun_pm_sendform.submit();
+			document.forms.profit_pm_sendform.send_action.value = 'send';
+			document.forms.profit_pm_sendform.submit();
 
 			return false;
 		}
 	}
 
 
-	function pun_pm_onload() {
+	function profit_pm_onload() {
 		var result = isIE || isSafari ? add_handler("keydown", key_handler) : add_handler("keypress", key_handler);
 
 		if (result) {
-			setTimeout("document.forms.pun_pm_sendform.pm_send.title = 'Ctrl + Enter'", 500);
-			setTimeout("document.forms.pun_pm_sendform.pm_draft.title = 'Ctrl + S'", 500);
+			setTimeout("document.forms.profit_pm_sendform.pm_send.title = 'Ctrl + Enter'", 500);
+			setTimeout("document.forms.profit_pm_sendform.pm_draft.title = 'Ctrl + S'", 500);
 		}
 	}
 
 
 	// Run on page load
-	PUNBB.common.addDOMReadyEvent(pun_pm_onload);
+	PUNBB.common.addDOMReadyEvent(profit_pm_onload);
 })(window);
