@@ -1146,10 +1146,13 @@ li.info-lastpost cite {
 li.info-lastpost cite,
 li.info-lastpost span,
 li.info-forum a {
-	display: block;
-	padding: 0 1em;
+	display: inline;
+	padding: 0;
 	font-style: normal;
 	font-weight: normal;
+}
+li.info-lastpost cite:before {
+    content: ' от ';
 }
 
 li.info-lastpost strong {
