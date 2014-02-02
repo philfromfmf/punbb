@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension SYSTEM "ext-1.0.dtd">
+
+<extension engine="1.0">
+
+	<id>profit_reputation</id>
+	<title>Reputation</title>
+	<version>1.0</version>
+	<description><![CDATA[Allow users to give reputation points to other users. Users necessarily specify the reason of change of reputation and can look who it changed. Admins can delete any reputation any users.]]></description>
+	<author>PRofIT</author>
+	<minversion>1.4RC1</minversion>
+	<maxtestedon>1.4.3</maxtestedon>
+
+    <install><![CDATA[
+        define('REPUTATION_EXTENSION', 1);
+        require $ext_info['path'].'/install.php';
+	]]></install>
+
+    <uninstall><![CDATA[
+        define('REPUTATION_EXTENSION', 1);
+        require $ext_info['path'].'/uninstall.php';
+	]]></uninstall>
+
+</extension>

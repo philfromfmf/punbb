@@ -16,7 +16,6 @@
 		<dependency>pun_jquery</dependency>
 	</dependencies>
 
-
 	<install><![CDATA[
 		forum_config_add('o_nya_jquery_ui_include_method', '0');
 		forum_config_add('o_nya_jquery_ui_include_css', '0');

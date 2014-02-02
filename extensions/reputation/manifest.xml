@@ -20,11 +20,11 @@
 	<description><![CDATA[Allow users to give reputation points to other users. Users necessarily specify the reason of change of reputation and can look who it changed. Admins can delete any reputation any users.]]></description>
 	<author>hcs</author>
 	<minversion>1.4RC1</minversion>
-	<maxtestedon>1.4.2</maxtestedon>
+	<maxtestedon>1.4.3</maxtestedon>
 
 	<dependencies>
 		<dependency>developer_helper</dependency>
-		<dependency>pun_jquery</dependency>
+		<dependency>profit_jquery</dependency>
 		<dependency>nya_jquery_ui</dependency>
 	</dependencies>
 
