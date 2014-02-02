@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension SYSTEM "ext-1.0.dtd">
+
+<extension engine="1.0">
+
+	<id>profit_jquery</id>
+	<title>jQuery</title>
+	<description>A PunBB extension that provide jQuery lib (version 1.11.0)</description>
+	<author>PRofIT and PunBB Development Team</author>
+	<version>1.11.0</version>
+
+	<minversion>1.4RC1</minversion>
+	<maxtestedon>1.4.3</maxtestedon>
+
+	<install><![CDATA[
+	    require $ext_info['path'].'/install.php';
+	]]></install>
+
+	<uninstall><![CDATA[
+        require $ext_info['path'].'/uninstall.php';
+	]]></uninstall>
+
+	<hooks>
+
+		<hook id="es_essentials"><![CDATA[
+            require $ext_info['path'].'/essentials.php';
+		]]></hook>
+
+		<hook id="aop_features_gzip_fieldset_end"><![CDATA[
+            require $ext_info['path'].'/features.php';
+		]]></hook>
+
+		<hook id="aop_features_validation"><![CDATA[
+            require $ext_info['path'].'/features_validation.php';
+		]]></hook>
+
+		<hook id="ft_js_include" priority="4"><![CDATA[
+            require $ext_info['path'].'/js_include.php';
+		]]></hook>
+
+	</hooks>
+
+</extension>

@@ -3,7 +3,7 @@
 if (!defined('FORUM'))
 	die();
 
-$lang_pun_jquery = array(
+$lang_profit_jquery = array(
 	'Setup jquery'						=> 'jQuery (version %s)',
 	'Setup jquery legend'				=> 'jQuery (version %s)',
 
